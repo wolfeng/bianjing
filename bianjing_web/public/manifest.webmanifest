@@ -1,0 +1,31 @@
+{
+  "name": "汴京图考",
+  "short_name": "汴京图考",
+  "description": "北宋东京城（汴京）三重城池与455处古迹全景地理复原，支持离线与快速安装。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fbf7ee",
+  "theme_color": "#78350f",
+  "orientation": "any",
+  "categories": ["education", "books", "travel"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,2689 @@
+{
+  "type": "FeatureCollection",
+  "crs": "WGS84",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "外城（新城/罗城）",
+        "desc": "考古实测东墙7660、西墙7590、南墙6990、北墙6940米，周长约29120米，方向190°。按顺天门坐标与各墙长度、偏角推算",
+        "confidence": "estimated",
+        "layer": "城墙",
+        "kind": "polygon",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://www.51774.com/kaogufaxian/67462.html",
+          "https://osgeo.cn/post/adc62/",
+          "https://www.hnswwkgyjy.cn/ueditor/php/upload/file/20220524/1653363795965934.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              114.314997,
+              34.844708
+            ],
+            [
+              114.390645,
+              34.834394
+            ],
+            [
+              114.376054,
+              34.766433
+            ],
+            [
+              114.300539,
+              34.777368
+            ],
+            [
+              114.314997,
+              34.844708
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "里城（旧城/阙城）",
+        "desc": "南墙在大南门北约300–350米，北墙在龙亭大殿北约500米，东西墙压在明清砖城东西墙下；周长约11550米",
+        "confidence": "estimated",
+        "layer": "城墙",
+        "kind": "polygon",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://51774.com/kaogufaxian/66982.html",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              114.3281,
+              34.8139
+            ],
+            [
+              114.3625,
+              34.8139
+            ],
+            [
+              114.3625,
+              34.7857
+            ],
+            [
+              114.3281,
+              34.7857
+            ],
+            [
+              114.3281,
+              34.8139
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宫城（大内）",
+        "desc": "考古实测宫城墙：东墙西距龙亭大殿约230米，东西墙长约690米，南北墙约570米，周回约五里。不含文献中轮廓未定的皇城/延福宫外缘",
+        "confidence": "anchored",
+        "layer": "城墙",
+        "kind": "polygon",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://www.51774.com/kaogufaxian/67462.html",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              114.343,
+              34.8097
+            ],
+            [
+              114.3492,
+              34.8097
+            ],
+            [
+              114.3492,
+              34.8035
+            ],
+            [
+              114.343,
+              34.8035
+            ],
+            [
+              114.343,
+              34.8097
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新郑门（顺天门）",
+        "desc": "外城西墙正门，直门两重；2012–2017年发掘，中心坐标114°18′16″E、34°47′44″N",
+        "confidence": "anchored",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.hnswwkgyjy.cn/ueditor/php/upload/file/20220524/1653363795965934.pdf",
+          "http://m.hnswwkgyjy.cn/NewsView.php?News_ID=604",
+          "https://www.51774.com/kaogufaxian/67462.html"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.304444,
+          34.795556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "万胜门（开远门）",
+        "desc": "西墙北门，半圆形瓮城，南距顺天门1680米",
+        "confidence": "anchored",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.307644,
+          34.810461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "固子门（金耀门）",
+        "desc": "西墙最北门，2003年河南大学新校区工程探明；简报称南距新郑门3340米",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.310806,
+          34.825189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西水门（汴河上水门）",
+        "desc": "汴河入城水门，在万胜门南",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.306444,
+          34.804872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西北水门（金水河）",
+        "desc": "金水河入城水门，在固子门北",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.31254,
+          34.833263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南薰门",
+        "desc": "外城正南门，直门两重；遗址在第十六中学、学堂门小学，瓮城东西130米南北80米",
+        "confidence": "anchored",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://51774.com/kaogufaxian/66982.html",
+          "http://yxhenan.com/info/kf/sswjx_12957_2633.html",
+          "https://baike.baidu.com/item/%E5%8D%97%E8%96%B0%E9%97%A8/3210585"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.341267,
+          34.77147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "戴楼门（安上门）",
+        "desc": "南墙西门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.318904,
+          34.774709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蔡河上水门（广利水门）",
+        "desc": "戴楼门东",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.325386,
+          34.77377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蔡河下水门（普济水门）",
+        "desc": "陈州门西",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.354555,
+          34.769546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "陈州门（宣化门）",
+        "desc": "南墙东门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "http://yxhenan.com/info/kf/sswjx_12957_2633.html"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.359957,
+          34.768764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东水门（汴河下水门）",
+        "desc": "汴河出城水门，南岸上善门、北岸通津门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://baike.baidu.com/item/%E5%8D%97%E8%96%B0%E9%97%A8/3210585"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.379673,
+          34.78329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新宋门（朝阳门）",
+        "desc": "东墙正门，直门两重，与旧宋门相对",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.380625,
+          34.787726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新曹门（含辉门）",
+        "desc": "东墙北门，半圆形瓮城东西50米南北108米",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.51774.com/kaogufaxian/67462.html",
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.383292,
+          34.800147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东北水门（善利水门/五丈河）",
+        "desc": "五丈河（广济河）出城水门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.385769,
+          34.811681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "陈桥门（景阳门）",
+        "desc": "北墙最东门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.376475,
+          34.836326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "封丘门（永泰门）",
+        "desc": "北墙正门，直门两重",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.362849,
+          34.838183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新酸枣门（通天门）",
+        "desc": "北墙中西门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.347044,
+          34.840338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "卫州门（安肃门）",
+        "desc": "北墙最西门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.332874,
+          34.84227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "朱雀门",
+        "desc": "里城正南门；大南门北约350米中山路下，缺口宽约90米，今朱雀广场",
+        "confidence": "anchored",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://51774.com/kaogufaxian/66982.html",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.344,
+          34.7857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "保康门",
+        "desc": "里城南墙东门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.353,
+          34.7857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新门（崇明门）",
+        "desc": "里城南墙西门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3345,
+          34.7857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旧郑门（宜秋门）",
+        "desc": "里城西墙南门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3281,
+          34.7935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "梁门（阊阖门）",
+        "desc": "里城西墙北门；明清大梁门沿其位",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3281,
+          34.8016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旧宋门（丽景门）",
+        "desc": "里城东墙南门；明清宋门（仁和门）一带",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3625,
+          34.7876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旧曹门（望春门）",
+        "desc": "里城东墙北门；今曹门一带",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3625,
+          34.801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旧封丘门（安远门）",
+        "desc": "里城北墙东门；明清北门亦名安远门",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3573,
+          34.8139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "景龙门（旧酸枣门）",
+        "desc": "里城北墙中门，近艮岳",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3461,
+          34.8139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "天波门（金水门）",
+        "desc": "里城北墙西门，金水河入里城处",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.333,
+          34.8139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宣德门（宫城正门）",
+        "desc": "宫城正南门，御街北端；位于宋都御街北端一带",
+        "confidence": "estimated",
+        "layer": "城门",
+        "kind": "point",
+        "sources": [
+          "https://51774.com/kaogufaxian/66982.html",
+          "https://osgeo.cn/post/adc62/",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3461,
+          34.8035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "御街",
+        "desc": "宣德门—州桥—朱雀门—龙津桥—南薰门，叠压于今中山路下7.5–8.5米，全长约8.5华里",
+        "confidence": "anchored",
+        "layer": "街道",
+        "kind": "line",
+        "sources": [
+          "https://51774.com/kaogufaxian/66982.html",
+          "https://baike.baidu.com/item/%E5%8D%97%E8%96%B0%E9%97%A8/3210585"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.3461,
+            34.8035
+          ],
+          [
+            114.344841,
+            34.791338
+          ],
+          [
+            114.344,
+            34.7857
+          ],
+          [
+            114.341267,
+            34.77147
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "汴河",
+        "desc": "自西水门入城，经州桥（宽25–28米）、相国寺南，东出东水门",
+        "confidence": "estimated",
+        "layer": "河流",
+        "kind": "line",
+        "sources": [
+          "https://www.hnswwkgyjy.cn/NewsView.php?News_ID=1985",
+          "http://www.ncha.gov.cn/art/2023/3/24/art_2697_180544.html",
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.306444,
+            34.804872
+          ],
+          [
+            114.325154,
+            34.793319
+          ],
+          [
+            114.325408,
+            34.79317
+          ],
+          [
+            114.32568,
+            34.793024
+          ],
+          [
+            114.325969,
+            34.792881
+          ],
+          [
+            114.326273,
+            34.792743
+          ],
+          [
+            114.32659,
+            34.792608
+          ],
+          [
+            114.326919,
+            34.792479
+          ],
+          [
+            114.327258,
+            34.792356
+          ],
+          [
+            114.327605,
+            34.792238
+          ],
+          [
+            114.327958,
+            34.792127
+          ],
+          [
+            114.328317,
+            34.792023
+          ],
+          [
+            114.328678,
+            34.791926
+          ],
+          [
+            114.329041,
+            34.791837
+          ],
+          [
+            114.329403,
+            34.791756
+          ],
+          [
+            114.329763,
+            34.791684
+          ],
+          [
+            114.33012,
+            34.791621
+          ],
+          [
+            114.330471,
+            34.791568
+          ],
+          [
+            114.330815,
+            34.791526
+          ],
+          [
+            114.331149,
+            34.791494
+          ],
+          [
+            114.331474,
+            34.791473
+          ],
+          [
+            114.331786,
+            34.791464
+          ],
+          [
+            114.341989,
+            34.791366
+          ],
+          [
+            114.342228,
+            34.791361
+          ],
+          [
+            114.342472,
+            34.791352
+          ],
+          [
+            114.342719,
+            34.791339
+          ],
+          [
+            114.342969,
+            34.791321
+          ],
+          [
+            114.34322,
+            34.7913
+          ],
+          [
+            114.343472,
+            34.791275
+          ],
+          [
+            114.343722,
+            34.791246
+          ],
+          [
+            114.343971,
+            34.791214
+          ],
+          [
+            114.344216,
+            34.791179
+          ],
+          [
+            114.344457,
+            34.791141
+          ],
+          [
+            114.344693,
+            34.791101
+          ],
+          [
+            114.344922,
+            34.791057
+          ],
+          [
+            114.345144,
+            34.791012
+          ],
+          [
+            114.345356,
+            34.790964
+          ],
+          [
+            114.345559,
+            34.790914
+          ],
+          [
+            114.345751,
+            34.790862
+          ],
+          [
+            114.34593,
+            34.790808
+          ],
+          [
+            114.346096,
+            34.790753
+          ],
+          [
+            114.346248,
+            34.790697
+          ],
+          [
+            114.346383,
+            34.79064
+          ],
+          [
+            114.347358,
+            34.790198
+          ],
+          [
+            114.347493,
+            34.79014
+          ],
+          [
+            114.347645,
+            34.790081
+          ],
+          [
+            114.34781,
+            34.790022
+          ],
+          [
+            114.347989,
+            34.789962
+          ],
+          [
+            114.34818,
+            34.789902
+          ],
+          [
+            114.348382,
+            34.789843
+          ],
+          [
+            114.348594,
+            34.789784
+          ],
+          [
+            114.348814,
+            34.789726
+          ],
+          [
+            114.349042,
+            34.789669
+          ],
+          [
+            114.349276,
+            34.789613
+          ],
+          [
+            114.349516,
+            34.789559
+          ],
+          [
+            114.34976,
+            34.789507
+          ],
+          [
+            114.350007,
+            34.789457
+          ],
+          [
+            114.350256,
+            34.789409
+          ],
+          [
+            114.350506,
+            34.789364
+          ],
+          [
+            114.350755,
+            34.789322
+          ],
+          [
+            114.351003,
+            34.789283
+          ],
+          [
+            114.351248,
+            34.789248
+          ],
+          [
+            114.35149,
+            34.789216
+          ],
+          [
+            114.351727,
+            34.789188
+          ],
+          [
+            114.359673,
+            34.788312
+          ],
+          [
+            114.359914,
+            34.788284
+          ],
+          [
+            114.360167,
+            34.788252
+          ],
+          [
+            114.360431,
+            34.788215
+          ],
+          [
+            114.360704,
+            34.788175
+          ],
+          [
+            114.360986,
+            34.788132
+          ],
+          [
+            114.361274,
+            34.788086
+          ],
+          [
+            114.361567,
+            34.788036
+          ],
+          [
+            114.361865,
+            34.787984
+          ],
+          [
+            114.362164,
+            34.78793
+          ],
+          [
+            114.362464,
+            34.787874
+          ],
+          [
+            114.362764,
+            34.787816
+          ],
+          [
+            114.363062,
+            34.787756
+          ],
+          [
+            114.363357,
+            34.787696
+          ],
+          [
+            114.363647,
+            34.787634
+          ],
+          [
+            114.36393,
+            34.787571
+          ],
+          [
+            114.364206,
+            34.787508
+          ],
+          [
+            114.364473,
+            34.787445
+          ],
+          [
+            114.36473,
+            34.787382
+          ],
+          [
+            114.364974,
+            34.78732
+          ],
+          [
+            114.365205,
+            34.787258
+          ],
+          [
+            114.379673,
+            34.78329
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蔡河（惠民河）",
+        "desc": "自广利水门入城，经龙津桥，东南出普济水门",
+        "confidence": "estimated",
+        "layer": "河流",
+        "kind": "line",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf",
+          "https://51774.com/kaogufaxian/66982.html"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.325386,
+            34.77377
+          ],
+          [
+            114.330682,
+            34.779147
+          ],
+          [
+            114.330884,
+            34.779339
+          ],
+          [
+            114.331106,
+            34.779525
+          ],
+          [
+            114.331346,
+            34.779705
+          ],
+          [
+            114.331602,
+            34.779878
+          ],
+          [
+            114.331873,
+            34.780044
+          ],
+          [
+            114.332157,
+            34.780202
+          ],
+          [
+            114.332454,
+            34.780351
+          ],
+          [
+            114.33276,
+            34.780491
+          ],
+          [
+            114.333075,
+            34.780622
+          ],
+          [
+            114.333398,
+            34.780742
+          ],
+          [
+            114.333725,
+            34.780852
+          ],
+          [
+            114.334058,
+            34.78095
+          ],
+          [
+            114.334392,
+            34.781037
+          ],
+          [
+            114.334728,
+            34.781111
+          ],
+          [
+            114.335063,
+            34.781172
+          ],
+          [
+            114.335395,
+            34.78122
+          ],
+          [
+            114.335725,
+            34.781254
+          ],
+          [
+            114.336049,
+            34.781273
+          ],
+          [
+            114.336366,
+            34.781278
+          ],
+          [
+            114.336675,
+            34.781266
+          ],
+          [
+            114.341156,
+            34.780981
+          ],
+          [
+            114.341399,
+            34.780965
+          ],
+          [
+            114.341655,
+            34.780949
+          ],
+          [
+            114.341922,
+            34.780932
+          ],
+          [
+            114.3422,
+            34.780914
+          ],
+          [
+            114.342486,
+            34.780896
+          ],
+          [
+            114.34278,
+            34.780877
+          ],
+          [
+            114.34308,
+            34.780857
+          ],
+          [
+            114.343384,
+            34.780838
+          ],
+          [
+            114.343691,
+            34.780818
+          ],
+          [
+            114.344,
+            34.780797
+          ],
+          [
+            114.344308,
+            34.780777
+          ],
+          [
+            114.344615,
+            34.780757
+          ],
+          [
+            114.344919,
+            34.780737
+          ],
+          [
+            114.345219,
+            34.780718
+          ],
+          [
+            114.345513,
+            34.780698
+          ],
+          [
+            114.3458,
+            34.78068
+          ],
+          [
+            114.346077,
+            34.780661
+          ],
+          [
+            114.346345,
+            34.780644
+          ],
+          [
+            114.3466,
+            34.780627
+          ],
+          [
+            114.346843,
+            34.78061
+          ],
+          [
+            114.35144,
+            34.780304
+          ],
+          [
+            114.351812,
+            34.780267
+          ],
+          [
+            114.352173,
+            34.780205
+          ],
+          [
+            114.35252,
+            34.780122
+          ],
+          [
+            114.352854,
+            34.780016
+          ],
+          [
+            114.353174,
+            34.77989
+          ],
+          [
+            114.353477,
+            34.779744
+          ],
+          [
+            114.353764,
+            34.77958
+          ],
+          [
+            114.354032,
+            34.779399
+          ],
+          [
+            114.354282,
+            34.779201
+          ],
+          [
+            114.354512,
+            34.778987
+          ],
+          [
+            114.35472,
+            34.77876
+          ],
+          [
+            114.354907,
+            34.778519
+          ],
+          [
+            114.35507,
+            34.778266
+          ],
+          [
+            114.35521,
+            34.778002
+          ],
+          [
+            114.355324,
+            34.777727
+          ],
+          [
+            114.355412,
+            34.777444
+          ],
+          [
+            114.355473,
+            34.777152
+          ],
+          [
+            114.355505,
+            34.776854
+          ],
+          [
+            114.355508,
+            34.77655
+          ],
+          [
+            114.35548,
+            34.77624
+          ],
+          [
+            114.354555,
+            34.769546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五丈河（广济河）",
+        "desc": "城东北，东出善利水门通京东",
+        "confidence": "estimated",
+        "layer": "河流",
+        "kind": "line",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.36,
+            34.8139
+          ],
+          [
+            114.368866,
+            34.818407
+          ],
+          [
+            114.369133,
+            34.818531
+          ],
+          [
+            114.369413,
+            34.818642
+          ],
+          [
+            114.369705,
+            34.818737
+          ],
+          [
+            114.370008,
+            34.818819
+          ],
+          [
+            114.370319,
+            34.818886
+          ],
+          [
+            114.370637,
+            34.818938
+          ],
+          [
+            114.370961,
+            34.818977
+          ],
+          [
+            114.37129,
+            34.819001
+          ],
+          [
+            114.37162,
+            34.819011
+          ],
+          [
+            114.371952,
+            34.819008
+          ],
+          [
+            114.372282,
+            34.81899
+          ],
+          [
+            114.372611,
+            34.818958
+          ],
+          [
+            114.372936,
+            34.818912
+          ],
+          [
+            114.373255,
+            34.818852
+          ],
+          [
+            114.373567,
+            34.818779
+          ],
+          [
+            114.373871,
+            34.818692
+          ],
+          [
+            114.374165,
+            34.818591
+          ],
+          [
+            114.374447,
+            34.818476
+          ],
+          [
+            114.374715,
+            34.818348
+          ],
+          [
+            114.374969,
+            34.818206
+          ],
+          [
+            114.385769,
+            34.811681
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金水河（天源河）",
+        "desc": "自西北水门引入，经天波门入宫城",
+        "confidence": "estimated",
+        "layer": "河流",
+        "kind": "line",
+        "sources": [
+          "https://www.dpm.org.cn/Uploads/File/2019/11/25/u5ddbb7e042505.pdf"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.31254,
+            34.833263
+          ],
+          [
+            114.318701,
+            34.819833
+          ],
+          [
+            114.318819,
+            34.819598
+          ],
+          [
+            114.318958,
+            34.819362
+          ],
+          [
+            114.319116,
+            34.819128
+          ],
+          [
+            114.319292,
+            34.818895
+          ],
+          [
+            114.319485,
+            34.818664
+          ],
+          [
+            114.319693,
+            34.818437
+          ],
+          [
+            114.319915,
+            34.818214
+          ],
+          [
+            114.320151,
+            34.817997
+          ],
+          [
+            114.320398,
+            34.817786
+          ],
+          [
+            114.320656,
+            34.817583
+          ],
+          [
+            114.320924,
+            34.817387
+          ],
+          [
+            114.321199,
+            34.817201
+          ],
+          [
+            114.321481,
+            34.817025
+          ],
+          [
+            114.321768,
+            34.81686
+          ],
+          [
+            114.32206,
+            34.816707
+          ],
+          [
+            114.322355,
+            34.816567
+          ],
+          [
+            114.322652,
+            34.816441
+          ],
+          [
+            114.322949,
+            34.81633
+          ],
+          [
+            114.323245,
+            34.816235
+          ],
+          [
+            114.32354,
+            34.816156
+          ],
+          [
+            114.330261,
+            34.814553
+          ],
+          [
+            114.330494,
+            34.814496
+          ],
+          [
+            114.330739,
+            34.814434
+          ],
+          [
+            114.330994,
+            34.814368
+          ],
+          [
+            114.331258,
+            34.814296
+          ],
+          [
+            114.33153,
+            34.814221
+          ],
+          [
+            114.331808,
+            34.814143
+          ],
+          [
+            114.332091,
+            34.814061
+          ],
+          [
+            114.332377,
+            34.813977
+          ],
+          [
+            114.332666,
+            34.81389
+          ],
+          [
+            114.332955,
+            34.813802
+          ],
+          [
+            114.333244,
+            34.813712
+          ],
+          [
+            114.33353,
+            34.813622
+          ],
+          [
+            114.333814,
+            34.81353
+          ],
+          [
+            114.334092,
+            34.813439
+          ],
+          [
+            114.334365,
+            34.813348
+          ],
+          [
+            114.334629,
+            34.813258
+          ],
+          [
+            114.334885,
+            34.813169
+          ],
+          [
+            114.335131,
+            34.813081
+          ],
+          [
+            114.335365,
+            34.812996
+          ],
+          [
+            114.335586,
+            34.812912
+          ],
+          [
+            114.344,
+            34.8097
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金明池",
+        "desc": "新郑门（顺天门）外西北皇家水上苑囿；勘探约东西1240米、南北1230米，东岸距外城西墙约300米。本面为示意矩形，OSM点仍保留为标注",
+        "confidence": "estimated",
+        "layer": "园林",
+        "kind": "polygon",
+        "sources": [
+          "https://www.51774.com/kaogufaxian/67462.html",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              114.289661,
+              34.806598
+            ],
+            [
+              114.303057,
+              34.804658
+            ],
+            [
+              114.300713,
+              34.793745
+            ],
+            [
+              114.287317,
+              34.795685
+            ],
+            [
+              114.289661,
+              34.806598
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "开宝寺塔（今铁塔）",
+        "desc": "北宋开宝寺塔（祐国寺塔）。宋仁宗皇祐元年（1049）敕建，为八角十三层仿木构红褐色琉璃面砖佛塔，是中国现存最高大、最早的琉璃砖塔。北宋官私文献均称“开宝寺塔”或“开宝寺琉璃塔”，元代因其色如生铁始俗称“铁塔”，明清沿袭至今。为北宋东京城东北部最重要的地面建筑实存基准。",
+        "confidence": "anchored",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)",
+          "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates&titles=Iron%20Pagoda|Daxiangguo%20Temple"
+        ],
+        "position_source": "calibrated:北宋开宝寺塔（铁塔），皇祐元年（1049）建，现存全国重点文物保护单位",
+        "is_post_song_ref": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.36486,
+          34.81663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "天清寺塔（繁塔）",
+        "desc": "开封现存最古老的地面建筑原物。始建于北宋太祖开宝七年（974），原名兴慈塔，建于皇家寺院天清寺内。因其坐落于西汉梁孝王著名的名胜高台“繁台”之上，北宋市井民间与文人自建塔起即普遍依台俗称“繁塔”或“繁台塔”。历经千年沧桑，为北宋东京城东南地表最重要的实物基准。",
+        "confidence": "anchored",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)",
+          "https://www.amap.com/place/B017A00KJK"
+        ],
+        "position_source": "calibrated:北宋开宝七年（974）建天清寺繁塔，现存全国重点文物保护单位",
+        "is_post_song_ref": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.35879,
+          34.77061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "延春阁（今龙亭大殿）",
+        "desc": "北宋东京皇宫大内后苑核心标志性高台楼阁。其下层叠压着北宋延春阁宏大基址，为北宋禁苑第一高阁。金代在其上建寝殿，明代建周王府煤山万寿亭，清代建万寿宫大殿（俗称龙亭大殿）。地名以北宋延春阁为本位，现存高台龙亭大殿为开封城摞城最核心的地面实证基准。",
+        "confidence": "anchored",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)",
+          "https://www.51774.com/kaogufaxian/67462.html"
+        ],
+        "position_source": "calibrated:开封龙亭大殿（全国重点文保单位），地下13米青砖高台层层叠压北宋延春阁基址",
+        "is_post_song_ref": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.34671,
+          34.80939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大相国寺",
+        "desc": "北宋皇家寺院，今址大体沿袭",
+        "confidence": "anchored",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)",
+          "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates&titles=Iron%20Pagoda|Daxiangguo%20Temple"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.34878,
+          34.79265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "州桥（天汉桥）",
+        "desc": "中山路与自由路十字路口南约50米；2018–2022年发掘，入选2022年度全国十大考古新发现",
+        "confidence": "anchored",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://www.hnswwkgyjy.cn/NewsView.php?News_ID=1985",
+          "http://www.ncha.gov.cn/art/2023/3/24/art_2697_180544.html",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.344841,
+          34.791338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龙津桥",
+        "desc": "御街跨蔡河之桥，朱雀门南",
+        "confidence": "estimated",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://51774.com/kaogufaxian/66982.html",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.344,
+          34.7812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "吹台（今禹王台）",
+        "desc": "开封现存最古老的地面历史文化名胜之一。相传春秋晋国乐师师旷曾在此吹奏音律，故名吹台。北宋时期位于东京城外城东南郊野，风景秀丽，苏轼、苏辙、晁补之等宋代文人常登吹台赋诗游赏。明代嘉靖年间在台上建禹王庙，因而后世俗称禹王台。台基历经数千年未变，为校正北宋东京城东南外郭的重要地面实测基准。",
+        "confidence": "anchored",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ],
+        "position_source": "calibrated:开封禹王台（吹台，文保单位），春秋筑台，宋称吹台，明代建庙改称禹王台",
+        "is_post_song_ref": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.36324,
+          34.76986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "玉清昭应宫故址（今延庆观）",
+        "desc": "北宋大中祥符年间宋真宗敕建之天下第一道宫玉清昭应宫故地范围。金元之际全真教宗师重修，元太宗五年（1233）定名延庆观。地名以北宋玉清昭应宫故址为主称，延庆观作为开封现存全国重点文保单位提供地面实证基准。",
+        "confidence": "anchored",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ],
+        "position_source": "calibrated:元明在北宋玉清昭应宫旧址重修，现存全国重点文物保护单位",
+        "is_post_song_ref": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.34036,
+          34.7932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "樊楼（丰乐楼）",
+        "desc": "东京第一酒楼，在宫城东华门外景明坊",
+        "confidence": "estimated",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3515,
+          34.806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "艮岳（万岁山）",
+        "desc": "宋徽宗所筑皇家园林，宫城东北、景龙门内外",
+        "confidence": "estimated",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）",
+          "https://osgeo.cn/post/adc62/"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.356,
+          34.812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "金明池",
+        "desc": "新郑门外西北，皇家水上演武；OSM标注遗址点",
+        "confidence": "anchored",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)",
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.29285,
+          34.80051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "琼林苑",
+        "desc": "新郑门外道南，与金明池相对",
+        "confidence": "estimated",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2935,
+          34.7915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "开封府（北宋府衙）",
+        "desc": "《东京梦华录》载在州桥西浚仪桥之西；今复建开封府（34.7906,114.3411）为现代建筑",
+        "confidence": "estimated",
+        "layer": "建筑",
+        "kind": "point",
+        "sources": [
+          "《东京梦华录》卷一“东都外城”“旧京城”（孟元老）",
+          "https://www.openstreetmap.org/ (Nominatim 检索, 2026-11-03)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.34,
+          34.7915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "单将军庙",
+        "desc": "外城西北隅；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(665,1110)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.317613,
+          34.838891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西岳庙",
+        "desc": "外城西北隅；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(650,1145)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.316997,
+          34.838065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东岳庙",
+        "desc": "外城东北隅；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2760,1095)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.385635,
+          34.828845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "佑神观",
+        "desc": "外城西南隅；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(570,3655)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.30697,
+          34.777841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "地踊佛寺",
+        "desc": "外城东南隅；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2780,3725)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.374121,
+          34.768125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永丰仓",
+        "desc": "外城东南隅官仓；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2820,3680)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.375493,
+          34.768953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "富国仓",
+        "desc": "外城东南隅官仓；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2790,3610)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.374914,
+          34.770573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大佛寺",
+        "desc": "外城西北；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(910,1710)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.323785,
+          34.822471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宝城楼",
+        "desc": "据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(910,1840)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.323356,
+          34.819251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "太清观",
+        "desc": "据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(860,1905)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.321508,
+          34.817883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "开化院",
+        "desc": "据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1000,1668)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.326876,
+          34.823086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "两浙尼寺",
+        "desc": "据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1170,1877)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.33169,
+          34.817127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "遥华宫",
+        "desc": "据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1170,1532)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.33291,
+          34.825658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宝相寺",
+        "desc": "里城西南外；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(880,3072)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.318476,
+          34.78994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "太学（辟雍）",
+        "desc": "外城南部；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(990,3290)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.321278,
+          34.784489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "太平桥",
+        "desc": "蔡河桥；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1120,3225)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.325568,
+          34.785457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "军器所",
+        "desc": "据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(890,3370)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.317885,
+          34.78306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "观音院桥",
+        "desc": "汴河桥；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2100,2940)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.356975,
+          34.788049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "下土桥",
+        "desc": "汴河桥；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2390,3185)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.364788,
+          34.781401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "上土桥",
+        "desc": "汴河桥；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2650,3335)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.371951,
+          34.777092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高桥",
+        "desc": "蔡河桥；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2130,3318)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.356386,
+          34.779431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "云骑桥",
+        "desc": "蔡河桥；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2390,3475)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.36359,
+          34.77498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宜泰桥",
+        "desc": "蔡河桥；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2465,3568)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.36545,
+          34.772667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "观桥",
+        "desc": "蔡河桥；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2490,3632)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.36593,
+          34.77118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "潘楼",
+        "desc": "宫城东南，潘楼街；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1920,2488)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.353219,
+          34.799196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "太平兴国寺",
+        "desc": "据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1380,2605)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.335847,
+          34.798742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "御史台",
+        "desc": "据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1475,2725)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.338412,
+          34.795539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "拱宸门",
+        "desc": "宫城北门；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1625,2015)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.345784,
+          34.811696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宜秋门（图1标注）",
+        "desc": "图1所标里城西门；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(1070,3055)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.324542,
+          34.78956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "艮岳/万岁山（图1）",
+        "desc": "图1绘于里城东北隅；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2110,1790)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.362036,
+          34.814926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "天清寺（图1北部标注）",
+        "desc": "图1在里城东北另标一处天清寺，与繁塔所在天清寺冲突；据图1《北宋东京城复原图》标注位置，经单应变换推算",
+        "confidence": "estimated",
+        "layer": "图1地名",
+        "kind": "point",
+        "sources": [
+          "map1: 北宋东京城复原图（用户提供照片）",
+          "px=(2375,1908)"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.369814,
+          34.810906
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "version": 2,
+  "farWhenLatitudeDeltaGreaterThan": 0.04,
+  "categories": [
+    {
+      "category": "城门",
+      "color": "#B22222",
+      "sfSymbol": "door.left.hand.closed",
+      "emoji": "🚪",
+      "count": 30,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_gate"
+    },
+    {
+      "category": "水门",
+      "color": "#1E90FF",
+      "sfSymbol": "water.waves",
+      "emoji": "🌊",
+      "count": 10,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_water_gate"
+    },
+    {
+      "category": "宫殿",
+      "color": "#DAA520",
+      "sfSymbol": "crown.fill",
+      "emoji": "👑",
+      "count": 48,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_palace"
+    },
+    {
+      "category": "官署",
+      "color": "#8B4513",
+      "sfSymbol": "building.columns.fill",
+      "emoji": "🏛️",
+      "count": 36,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_palace"
+    },
+    {
+      "category": "寺院",
+      "color": "#FF8C00",
+      "sfSymbol": "building.fill",
+      "emoji": "🛕",
+      "count": 43,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_pagoda"
+    },
+    {
+      "category": "道观",
+      "color": "#6A5ACD",
+      "sfSymbol": "sparkles",
+      "emoji": "☯️",
+      "count": 13,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_pagoda"
+    },
+    {
+      "category": "祠庙",
+      "color": "#C71585",
+      "sfSymbol": "flame.fill",
+      "emoji": "🏮",
+      "count": 18,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_pagoda"
+    },
+    {
+      "category": "桥梁",
+      "color": "#4682B4",
+      "sfSymbol": "arrow.left.and.right",
+      "emoji": "🌉",
+      "count": 36,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_bridge"
+    },
+    {
+      "category": "街巷",
+      "color": "#808080",
+      "sfSymbol": "road.lanes",
+      "emoji": "🛣️",
+      "count": 75,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_street"
+    },
+    {
+      "category": "市场酒楼",
+      "color": "#DC143C",
+      "sfSymbol": "cup.and.saucer.fill",
+      "emoji": "🍶",
+      "count": 39,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_tavern"
+    },
+    {
+      "category": "园林池苑",
+      "color": "#2E8B57",
+      "sfSymbol": "leaf.fill",
+      "emoji": "🌳",
+      "count": 36,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_garden"
+    },
+    {
+      "category": "仓库",
+      "color": "#A0522D",
+      "sfSymbol": "shippingbox.fill",
+      "emoji": "📦",
+      "count": 10,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_courtyard"
+    },
+    {
+      "category": "军营",
+      "color": "#556B2F",
+      "sfSymbol": "shield.fill",
+      "emoji": "🛡️",
+      "count": 13,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_gate"
+    },
+    {
+      "category": "宅第",
+      "color": "#CD853F",
+      "sfSymbol": "house.fill",
+      "emoji": "🏠",
+      "count": 38,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_courtyard"
+    },
+    {
+      "category": "学校",
+      "color": "#008B8B",
+      "sfSymbol": "book.fill",
+      "emoji": "📚",
+      "count": 2,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_palace"
+    },
+    {
+      "category": "河渠",
+      "color": "#00BFFF",
+      "sfSymbol": "drop.fill",
+      "emoji": "💧",
+      "count": 8,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_water_gate"
+    },
+    {
+      "category": "其他",
+      "color": "#696969",
+      "sfSymbol": "mappin",
+      "emoji": "📍",
+      "count": 2,
+      "farStyle": "dot",
+      "nearStyle": "icon",
+      "nearIcon": "icon_courtyard"
+    }
+  ],
+  "placeIconOverrides": {
+    "州桥（天汉桥）": {
+      "nearIcon": "icon_bridge",
+      "label": "州桥"
+    },
+    "大庆殿": {
+      "nearIcon": "icon_daqingdian",
+      "label": "大庆殿"
+    },
+    "大内后苑遗址（今龙亭大殿）": {
+      "nearIcon": "icon_palace",
+      "label": "大内遗址(今龙亭)"
+    },
+    "古吹台（今禹王台）": {
+      "nearIcon": "icon_garden",
+      "label": "古吹台(禹王台)"
+    },
+    "开宝寺塔（今铁塔）": {
+      "nearIcon": "icon_tieta",
+      "label": "开宝寺塔(铁塔)"
+    },
+    "天清寺塔（繁塔）": {
+      "nearIcon": "icon_fanta",
+      "label": "繁塔"
+    },
+    "玉清昭应宫故址（今延庆观）": {
+      "nearIcon": "icon_pagoda",
+      "label": "玉清宫址(延庆观)"
+    }
+  },
+  "notes": [
+    "尺度小（俯瞰全城）：各类别用颜色圆点，图例以色块区分。",
+    "尺度大（放大街区）：用类别特色图标；铁塔、繁塔等用接近外形的专用图标。"
+  ],
+  "total": 457,
+  "延春阁（今龙亭大殿）": {
+    "icon": "🏛️",
+    "label": "延春阁(龙亭大殿)"
+  },
+  "吹台（今禹王台）": {
+    "icon": "🏯",
+    "label": "吹台(禹王台)"
+  }
+}

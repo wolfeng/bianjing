@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="汴京图考" />
+    <meta name="theme-color" content="#78350f" />
+    <title>汴京图考</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/icons/icon-192.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      /* 关键防闪烁：首屏首帧立即纯净渲染宋韵载入屏，杜绝无样式裸内容闪烁 */
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f2ea;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #app {
+        opacity: 0;
+        transition: opacity 0.4s cubic-bezier(0.2, 0, 0, 1);
+      }
+      #app.app-ready {
+        opacity: 1;
+      }
+      #app-loader {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        background: radial-gradient(circle at 50% 42%, #fdfbf7 0%, #f4efe4 55%, #ebe3d3 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        -webkit-user-select: none;
+        transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.45s;
+      }
+      #app-loader.fade-out {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .loader-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+        max-width: 360px;
+      }
+      .loader-emblem {
+        position: relative;
+        width: 72px;
+        height: 72px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .loader-ring-outer {
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        border: 1.5px dashed rgba(180, 83, 9, 0.25);
+        animation: loader-spin-reverse 20s linear infinite;
+      }
+      .loader-ring {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 2px solid rgba(180, 83, 9, 0.15);
+        border-top-color: #b45309;
+        border-right-color: #d97706;
+        animation: loader-spin 1.2s cubic-bezier(0.5, 0.1, 0.5, 0.9) infinite;
+      }
+      .loader-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #b45309 0%, #78350f 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 16px rgba(180, 83, 9, 0.3);
+      }
+      .loader-icon img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+      }
+      .loader-title {
+        font-family: 'Songti SC', 'Noto Serif SC', 'Source Han Serif SC', STSong, 'SimSun', serif;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        color: #1c1917;
+        margin-bottom: 6px;
+        padding-left: 6px;
+      }
+      .loader-sub {
+        font-size: 13px;
+        color: #786b59;
+        letter-spacing: 1.5px;
+        margin-bottom: 22px;
+      }
+      .loader-status {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12.5px;
+        color: #854d0e;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 6px 18px;
+        border-radius: 9999px;
+        border: 1px solid rgba(180, 83, 9, 0.16);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      }
+      .loader-dots span {
+        animation: loader-dot 1.4s infinite;
+        opacity: 0;
+      }
+      .loader-dots span:nth-child(1) { animation-delay: 0s; }
+      .loader-dots span:nth-child(2) { animation-delay: 0.25s; }
+      .loader-dots span:nth-child(3) { animation-delay: 0.5s; }
+      @keyframes loader-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes loader-spin-reverse {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes loader-dot {
+        0%, 20% { opacity: 0; }
+        45% { opacity: 1; }
+        80%, 100% { opacity: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 优雅宋韵载入屏（首屏立即可见，初始化完成后平滑淡出） -->
+    <div id="app-loader">
+      <div class="loader-content">
+        <div class="loader-emblem">
+          <div class="loader-ring-outer"></div>
+          <div class="loader-ring"></div>
+          <div class="loader-icon">
+            <img src="/icons/icon_tieta.png" alt="汴京" />
+          </div>
+        </div>
+        <div class="loader-title">汴京图考</div>
+        <div class="loader-sub">北宋东京城历史地理复原 · 455处古迹</div>
+        <div class="loader-status">
+          <span>正在绘制都城水系与古迹考据</span>
+          <span class="loader-dots"><span>.</span><span>.</span><span>.</span></span>
+        </div>
+      </div>
+    </div>
+    <div id="app" class="mode-parchment">
+      <!-- 地图主画布 -->
+      <div id="map"></div>
+
+      <!-- 轻柔古卷底色氛围层 -->
+      <div id="parchment-tint" class="parchment-tint"></div>
+
+      <!-- ==================== 顶部通栏半透明胶囊（macOS / iOS 自适应结构） ==================== -->
+      <header class="top-chrome">
+        <!-- 第一行：左「标题 | 凡例」 —— 中间通栏留白 —— 右「图层」 -->
+        <div class="glass-pill top-bar-pill">
+          <div class="top-bar-left">
+            <button id="btn-brand" class="brand-btn" type="button" title="回到全城默认视野">
+              <span class="brand-title">汴京图考</span>
+              <span class="brand-sub">(Bianjing)</span>
+            </button>
+
+            <div class="v-divider"></div>
+
+            <button id="btn-legend" class="bar-action-btn" type="button">
+              <svg class="bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a2.5 2.5 0 0 1 0-5H20" />
+              </svg>
+              <span>凡例</span>
+              <span id="legend-badge" class="bar-badge hidden">筛选</span>
+            </button>
+          </div>
+
+          <div class="top-bar-spacer"></div>
+
+          <div class="top-bar-right">
+            <button id="btn-layers" class="bar-action-btn" type="button">
+              <svg class="bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 12 12 17 22 12" />
+                <polyline points="2 17 12 22 22 17" />
+              </svg>
+              <span>图层</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 第二行：左上「🔍 搜索」胶囊，右上「+ / -」缩放胶囊与「定位」圆形按钮 -->
+        <div class="sub-chrome-row">
+          <button id="btn-search" class="glass-pill search-trigger-pill" type="button">
+            <svg class="search-trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7.5" />
+              <line x1="20" y1="20" x2="16.35" y2="16.35" />
+            </svg>
+            <span id="search-trigger-text">搜索</span>
+          </button>
+
+          <div class="right-map-controls">
+            <div class="glass-pill zoom-stepper-pill">
+              <button id="btn-zoom-in" class="zoom-step-btn" type="button" title="放大" aria-label="放大">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </button>
+              <div class="h-divider"></div>
+              <button id="btn-zoom-out" class="zoom-step-btn" type="button" title="缩小" aria-label="缩小">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </button>
+            </div>
+
+            <button id="btn-reset-view" class="glass-pill locate-circle-btn reset-view-btn" type="button" title="复位至汴京全城视野" aria-label="复位视野">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9V5a2 2 0 0 1 2-2h4" />
+                <path d="M15 3h4a2 2 0 0 1 2 2v4" />
+                <path d="M21 15v4a2 2 0 0 1-2 2h-4" />
+                <path d="M9 21H5a2 2 0 0 1-2-2v-4" />
+                <circle cx="12" cy="12" r="3" fill="currentColor" />
+              </svg>
+            </button>
+
+            <button id="btn-gps-locate" class="glass-pill locate-circle-btn gps-locate-btn" type="button" title="定位当前实际GPS位置" aria-label="定位位置">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.72 3.28a.75.75 0 0 0-.78-.17l-16.5 6.5a.75.75 0 0 0 .06 1.42l7.02 2.16 2.16 7.02a.75.75 0 0 0 1.42.06l6.5-16.5a.75.75 0 0 0-.18-.79Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- ==================== 正下方居中悬浮毛玻璃区 ==================== -->
+      <footer class="bottom-chrome">
+        <!-- 上层胶囊：选中地点名称（点击展开详情，✕ 取消选中） -->
+        <div id="selection-pill" class="glass-pill selection-pill hidden">
+          <button id="selection-expand-btn" class="selection-main-btn" type="button" title="点击查看考据详情">
+            <span id="selection-title" class="selection-title">开封府 · 官署</span>
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="18 15 12 9 6 15" />
+            </svg>
+          </button>
+          <button id="selection-close-btn" class="selection-close-btn" type="button" title="取消选中" aria-label="取消选中">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 下层胶囊：全城总览等专题菜单（< 切换，点击中间弹出菜单列表 >） -->
+        <div class="glass-pill bottom-menu-pill">
+          <button id="menu-prev-btn" class="menu-step-btn" type="button" title="上一专题视角" aria-label="上一专题">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+
+          <button id="menu-center-btn" class="menu-center-btn" type="button" title="点击选择视野与专题菜单">
+            <span id="menu-current-label" class="menu-current-label">北宋 · 全城总览 · 三重城池与455处古迹</span>
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="18 15 12 9 6 15" />
+            </svg>
+          </button>
+
+          <button id="menu-next-btn" class="menu-step-btn" type="button" title="下一专题视角" aria-label="下一专题">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 底部版权与数据来源行 -->
+        <div class="bottom-attribution-row">
+          <span class="map-brand-label">天地图</span>
+          <button id="btn-source-tag" class="source-tag-pill" type="button">
+            数据来源：考古简报 · 东京梦华录
+          </button>
+          <span class="map-brand-spacer"></span>
+        </div>
+      </footer>
+
+      <!-- ==================== 悬浮弹出层（点击对应按钮才弹出） ==================== -->
+      <div id="popover-backdrop" class="popover-backdrop hidden"></div>
+
+      <!-- 1. 凡例弹出面板（左上锚定） -->
+      <section id="popover-legend" class="glass-popover popover-top-left hidden" aria-label="凡例">
+        <div class="sheet-handle"><span></span></div>
+        <div class="popover-header">
+          <div>
+            <h3>凡例</h3>
+            <p id="legend-zoom-hint" class="popover-sub">北宋汴京古迹类别 · 考据可信度图式</p>
+          </div>
+          <button class="popover-close-btn" data-close-popover type="button">✕</button>
+        </div>
+        <div class="popover-body">
+          <div class="quick-chips-row">
+            <button type="button" id="leg-select-all" class="chip-btn active">全选 (455)</button>
+            <button type="button" id="leg-only-anchored" class="chip-btn">仅实测锚点 (15)</button>
+            <button type="button" id="leg-select-none" class="chip-btn">清空</button>
+          </div>
+
+          <div class="section-caption">古地名类别（单击开关 · 双击单选）</div>
+          <div id="legend-grid" class="legend-grid"></div>
+
+          <div class="section-caption">点位外圈图式</div>
+          <div class="confidence-box">
+            <div class="conf-line"><span class="c-dot anchored"></span><strong>深色外圈</strong>：考古发掘坐标或现存遗迹（误差 &lt;50m）</div>
+            <div class="conf-line"><span class="c-dot estimated"></span><strong>白色外圈</strong>：据《东京梦华录》与古图配准推算</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 图层弹出面板（右上锚定） -->
+      <section id="popover-layers" class="glass-popover popover-top-right hidden" aria-label="图层">
+        <div class="sheet-handle"><span></span></div>
+        <div class="popover-header">
+          <div>
+            <h3>图层与底图</h3>
+            <p class="popover-sub">天地图 CGCS2000 底图 · 北宋城池要素</p>
+          </div>
+          <button class="popover-close-btn" data-close-popover type="button">✕</button>
+        </div>
+        <div class="popover-body">
+          <div class="section-caption">天地图底图风格</div>
+          <div class="basemap-grid">
+            <button type="button" class="basemap-card active" data-basemap="parchment">
+              <div class="bm-thumb bm-parchment"></div>
+              <span>古卷暖色</span>
+            </button>
+            <button type="button" class="basemap-card" data-basemap="vec">
+              <div class="bm-thumb bm-vec"></div>
+              <span>标准矢量</span>
+            </button>
+            <button type="button" class="basemap-card" data-basemap="img">
+              <div class="bm-thumb bm-img"></div>
+              <span>卫星影像</span>
+            </button>
+            <button type="button" class="basemap-card" data-basemap="ter">
+              <div class="bm-thumb bm-ter"></div>
+              <span>地形晕渲</span>
+            </button>
+          </div>
+
+          <div class="group-box">
+            <label class="switch-row">
+              <div>
+                <div class="sw-title">现代今地名与路网注记</div>
+                <div class="sw-sub">天地图现代开封街巷地名（古今对照）</div>
+              </div>
+              <input type="checkbox" id="tog-tianditu-labels" class="ios-switch" checked />
+            </label>
+            <div class="slider-row">
+              <span>现代注记浓度</span>
+              <input type="range" id="rng-label-opacity" min="0" max="100" value="65" />
+              <span id="val-label-opacity" class="slider-val">65%</span>
+            </div>
+          </div>
+
+          <div class="section-caption">北宋东京城要素图层</div>
+          <div class="group-box">
+            <label class="switch-row">
+              <div>
+                <div class="sw-title">北宋三重城墙</div>
+                <div class="sw-sub">外城（罗城）、里城（旧城）、宫城（大内）</div>
+              </div>
+              <input type="checkbox" id="tog-walls" class="ios-switch" checked />
+            </label>
+            <label class="switch-row">
+              <div>
+                <div class="sw-title">四水河渠与千步御街</div>
+                <div class="sw-sub">汴河、蔡河、五丈河、金水河及御街中轴</div>
+              </div>
+              <input type="checkbox" id="tog-rivers" class="ios-switch" checked />
+            </label>
+            <label class="switch-row">
+              <div>
+                <div class="sw-title">北宋古地名标注（455 处）</div>
+                <div class="sw-sub">城门、宫殿、官署、寺观、酒楼、桥梁、宅第</div>
+              </div>
+              <input type="checkbox" id="tog-places" class="ios-switch" checked />
+            </label>
+          </div>
+
+          <div class="section-caption">天地图 API 密钥设置</div>
+          <div class="group-box" style="padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+            <div style="font-size: 12px; color: var(--text-sub, #666); line-height: 1.4;">
+              <div>密钥状态：<span id="tianditu-key-status" class="key-status-badge">检测中...</span></div>
+              <div id="tianditu-key-masked" style="font-size: 11px; color: #888; font-family: monospace; margin-top: 2px;"></div>
+            </div>
+            <button type="button" id="btn-config-tianditu-key" class="btn-subtle" style="padding: 5px 10px; font-size: 12px; border-radius: 6px; cursor: pointer; border: 1px solid rgba(0,0,0,0.1); background: rgba(0,0,0,0.03);">配置密钥</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 搜索弹出面板（左上搜索胶囊下方锚定） -->
+      <section id="popover-search" class="glass-popover popover-search hidden" aria-label="搜索">
+        <div class="sheet-handle"><span></span></div>
+        <div class="popover-header search-header">
+          <div class="search-input-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="7.5" />
+              <line x1="20" y1="20" x2="16.35" y2="16.35" />
+            </svg>
+            <input
+              type="search"
+              id="search-input"
+              placeholder="搜索城门、宫殿、寺观、桥、酒楼、宅第…"
+              autocomplete="off"
+            />
+            <button id="search-clear-btn" class="clear-btn hidden" type="button">✕</button>
+          </div>
+          <button class="popover-close-btn" data-close-popover type="button">✕</button>
+        </div>
+
+        <div id="search-chips-container" class="search-chips-container">
+          <button id="search-chip-scroll-left" class="chip-scroll-btn chip-scroll-left hidden" type="button" aria-label="向左滑动标签">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div id="search-filter-chips" class="search-chips-bar"></div>
+          <button id="search-chip-scroll-right" class="chip-scroll-btn chip-scroll-right" type="button" aria-label="向右滑动标签">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          <button id="search-chip-toggle-expand" class="chip-expand-btn" type="button" title="平铺展开全部标签" aria-label="展开全部标签">
+            <svg class="icon-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            <svg class="icon-collapse hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </button>
+        </div>
+        <div class="search-meta-bar">
+          <span id="search-result-count">共 455 处古迹</span>
+          <span>点击定位并在下方显示名称</span>
+        </div>
+        <div id="search-results-list" class="popover-body search-list"></div>
+      </section>
+
+      <!-- 4. 底部专题菜单弹出面板（正下方胶囊上方弹出） -->
+      <section id="popover-menu" class="glass-popover popover-bottom-center hidden" aria-label="全城总览与专题菜单">
+        <div class="sheet-handle"><span></span></div>
+        <div class="popover-header">
+          <div>
+            <h3>东京视野与专题巡礼</h3>
+            <p class="popover-sub">切换视角专题，或直达考古实测基准锚点</p>
+          </div>
+          <button class="popover-close-btn" data-close-popover type="button">✕</button>
+        </div>
+        <div class="popover-body">
+          <div class="section-caption">一、专题视野菜单（也可直接点底部 ‹ › 切换）</div>
+          <div id="menu-presets-list" class="menu-presets-list"></div>
+
+          <div class="section-caption">二、考古发掘与现存地面基准锚点（12 处）</div>
+          <div id="menu-anchors-grid" class="anchors-grid"></div>
+        </div>
+      </section>
+
+      <!-- 5. 选中地点详情弹出面板（再次点击底部选中地点胶囊时弹出） -->
+      <section id="popover-detail" class="glass-popover popover-bottom-center popover-detail-panel hidden" aria-label="古迹详情">
+        <div class="sheet-handle"><span></span></div>
+        <div class="popover-header detail-header-wrap">
+          <div class="detail-header-left">
+            <div id="detail-icon-wrap" class="detail-icon-avatar"></div>
+            <div class="detail-title-col">
+              <h3 id="detail-name" class="detail-title">开封府</h3>
+              <div id="detail-badges" class="detail-badges"></div>
+            </div>
+          </div>
+          <button class="popover-close-btn" data-close-popover type="button" aria-label="关闭详情">✕</button>
+        </div>
+        <div id="detail-body" class="popover-body detail-body"></div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then((reg) => {
+            console.log('[PWA] Service Worker 注册成功:', reg.scope)
+          }).catch((err) => {
+            console.warn('[PWA] Service Worker 注册失败:', err)
+          })
+        })
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production build outputs
+dist/
+**/dist/
+
+# Environment variables & secrets (NEVER commit to GitHub)
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Release archives
+*.zip
+*.tar.gz
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log
