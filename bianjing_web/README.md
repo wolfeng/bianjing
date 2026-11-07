@@ -2,6 +2,11 @@
 
 > **北宋东京城历史地理信息系统 · Web 客户端与 PWA 离线应用**
 
+[![Live Demo](https://img.shields.io/badge/Demo-在线体验-brightgreen.svg?style=flat-square&logo=googlechrome&logoColor=white)](https://bianjing.shoremagic.design)
+[![PWA Ready](https://img.shields.io/badge/PWA-Ready-green.svg?style=flat-square&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
+
+🌐 **在线体验网址**：[https://bianjing.shoremagic.design](https://bianjing.shoremagic.design)
+
 本项目为「汴京图考」的交互式 Web 端主工程。基于 **Vite + MapLibre GL JS** 构建，原生支持桌面与移动端触控，提供高精度北宋城池与现代天地图的古今时空叠合对照。
 
 ---

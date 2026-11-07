@@ -2,10 +2,16 @@
 
 > **北宋东京城历史地理信息系统 · 古今空间对照与考古实证研究平台**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF.svg)](https://vitejs.dev/)
-[![MapLibre GL](https://img.shields.io/badge/MapLibre_GL-4.x-blue.svg)](https://maplibre.org/)
-[![PWA Ready](https://img.shields.io/badge/PWA-Ready-green.svg)](https://web.dev/progressive-web-apps/)
+[![Live Demo](https://img.shields.io/badge/Demo-在线体验-brightgreen.svg?style=flat-square&logo=googlechrome&logoColor=white)](https://bianjing.shoremagic.design)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF.svg?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![MapLibre GL](https://img.shields.io/badge/MapLibre_GL-4.x-blue.svg?style=flat-square&logo=mapbox&logoColor=white)](https://maplibre.org/)
+[![PWA Ready](https://img.shields.io/badge/PWA-Ready-green.svg?style=flat-square&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
+
+🌐 **在线体验网址**：[https://bianjing.shoremagic.design](https://bianjing.shoremagic.design)  
+📱 **移动端支持**：直接在手机浏览器打开即可体验原生触控，支持「添加到主屏幕」作为独立 PWA App 离线运行。
+
+---
 
 「汴京图考」是一个以北宋东京开封府为空间本位的数字历史地理与城市形态复原系统。系统以国家文物考古勘探成果（城墙、城门、水关、建筑基址）与国家现存重点文保单位为地面实测控制骨架，结合《宋史·地理志》《东京梦华录》及传世舆图文献，精准复原了北宋东京城**三重城垣**、**四水五渠**、**千步御街**以及 **455 处殿宇、官署、寺观、街巷与酒楼瓦子**。
 
