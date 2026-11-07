@@ -8,6 +8,10 @@ dist/
 dist-ssr/
 *.local
 
+# Raw historical maps & data building pipeline (keep final deliverables only)
+maps/
+scripts/
+
 # Environment variables & secrets (NEVER commit to GitHub)
 .env
 .env.local

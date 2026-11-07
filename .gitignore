@@ -6,6 +6,12 @@ node_modules/
 dist/
 **/dist/
 
+# Raw historical maps & data building pipeline (keep final deliverables only)
+maps/
+scripts/
+**/maps/
+**/scripts/
+
 # Environment variables & secrets (NEVER commit to GitHub)
 .env
 .env.local
